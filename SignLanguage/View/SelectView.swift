@@ -22,6 +22,7 @@ struct SelectView: View {
                         .padding(10)
                     Spacer()
                     NavigationLink(destination: {
+                        
                         ZStack{
                             RadialGradient(colors: [.colorstartpoint, .colorendpoint], center: .bottomTrailing, startRadius: 600, endRadius: 400)
                                 .ignoresSafeArea()
@@ -38,6 +39,7 @@ struct SelectView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 20))
                     })
                     NavigationLink(destination: {
+                        
                         ZStack{
                             RadialGradient(colors: [.colorstartpoint, .colorendpoint], center: .bottomTrailing, startRadius: 400, endRadius: 700)
                                 .ignoresSafeArea()

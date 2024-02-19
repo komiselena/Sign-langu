@@ -14,6 +14,9 @@ struct CardView: View {
     
     var body: some View {
         VStack {
+            Text("Tap and swipe")
+                .font(.largeTitle)
+                .foregroundStyle(.tertiary)
             if !card.isFaceUp{
                 ZStack{
                     RoundedRectangle(cornerRadius: 25.0)
