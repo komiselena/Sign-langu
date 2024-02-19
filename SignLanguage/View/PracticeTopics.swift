@@ -21,6 +21,8 @@ struct PracticeTopics: View {
 struct PracticeButtonsTopics: View {
     @State var practiceVideo: PracticeVideo
     @State private var animalsPracticeView: Bool = false
+    @State private var foodPracticeView: Bool = false
+    @State private var commonphrasesPracticeView: Bool = false
 
     var body: some View {
         VStack{
@@ -40,15 +42,11 @@ struct PracticeButtonsTopics: View {
                     .clipShape(RoundedRectangle(cornerRadius: 20))
             })
             .sheet(isPresented: $animalsPracticeView){
-                ScrollView{
-                    ForEach(practiceVideo.animals.shuffled(), id: \.self){ animal in
-                        PracticeView(practvideo: animal)
-                    }
-                }
+                PracticeView(practvideo: practiceVideo.animals.randomElement() ?? PracticeVideo(video: "dog", name: "dog"))
             }
             
             Button(action: {
-                animalsPracticeView = true
+                foodPracticeView = true
             }, label: {
                 Text("Food")
                     .font(.largeTitle)
@@ -57,11 +55,11 @@ struct PracticeButtonsTopics: View {
                     .background(Color.secondary)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
             })
-            .sheet(isPresented: $animalsPracticeView){
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Sheet Content")/*@END_MENU_TOKEN@*/
+            .sheet(isPresented: $foodPracticeView){
+                PracticeView(practvideo: practiceVideo.food.randomElement() ?? PracticeVideo(video: "apple", name: "apple"))
             }
             Button(action: {
-                animalsPracticeView = true
+                commonphrasesPracticeView = true
             }, label: {
                 Text("Some phrases")
                     .font(.largeTitle)
@@ -70,8 +68,8 @@ struct PracticeButtonsTopics: View {
                     .background(Color.secondary)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
             })
-            .sheet(isPresented: $animalsPracticeView){
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Sheet Content")/*@END_MENU_TOKEN@*/
+            .sheet(isPresented: $commonphrasesPracticeView){
+                PracticeView(practvideo: practiceVideo.commonPhrases.randomElement() ?? PracticeVideo(video: "iamsorry", name: "iamsorry"))
             }
             Spacer()
         }

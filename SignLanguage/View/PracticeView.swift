@@ -13,6 +13,7 @@ struct PracticeView: View {
     @State private var player = AVPlayer()
     @State private var userstext: String = ""
     @State private var roundRec: Bool = false
+    @State private var showGreenView: Bool = false
     var body: some View {
         ZStack {
             RadialGradient(colors: [.colorendpoint, .colorstartpoint], center: .topTrailing, startRadius: 300, endRadius: 700)
@@ -31,10 +32,10 @@ struct PracticeView: View {
                     .textCase(.lowercase)
                     .onSubmit {
                         if userstext == practvideo.name{
-                            
                         }
                     }
             }
+            
         }
     }
 }
