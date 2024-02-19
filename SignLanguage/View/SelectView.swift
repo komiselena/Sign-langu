@@ -23,6 +23,8 @@ struct SelectView: View {
                     Spacer()
                     NavigationLink(destination: {
                         ZStack{
+                            RadialGradient(colors: [.colorstartpoint, .colorendpoint], center: .bottomTrailing, startRadius: 600, endRadius: 400)
+                                .ignoresSafeArea()
                             ForEach(abccards, id:\.self) { abccard in
                                 CardView(card: abccard)
                             }
@@ -37,12 +39,25 @@ struct SelectView: View {
                     })
                     NavigationLink(destination: {
                         ZStack{
+                            RadialGradient(colors: [.colorstartpoint, .colorendpoint], center: .bottomTrailing, startRadius: 400, endRadius: 700)
+                                .ignoresSafeArea()
                             ForEach(numcards) { numcard in
                                 CardView(card: numcard)
                             }
                         }
                     }, label: {
                         Text("123: Numbers")
+                            .font(.largeTitle)
+                            .foregroundStyle(Color.accentColor)
+                            .frame(width: 300, height: 75)
+                            .background(Color.secondary)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                    })
+                    Divider()
+                    NavigationLink(destination: {
+                        PracticeTopics()
+                    }, label: {
+                        Text("Practice it")
                             .font(.largeTitle)
                             .foregroundStyle(Color.accentColor)
                             .frame(width: 300, height: 75)
@@ -69,3 +84,4 @@ struct Preview: View {
         SelectView(abccards: card.alphabet, numcards: card.numbers)
     }
 }
+

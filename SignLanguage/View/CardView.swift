@@ -19,7 +19,7 @@ struct CardView: View {
                     RoundedRectangle(cornerRadius: 25.0)
                         .frame(width: 300, height: 350)
                         .foregroundColor(.accentColor)
-                        .shadow(radius: 4)
+                        .shadow(color: .white, radius: 0.5)
                     Text(card.sign)
                         .font(.system(size: 70, weight: .semibold, design: .rounded))
                         .foregroundColor(.white)
@@ -51,8 +51,8 @@ struct CardView: View {
                         swipeCard(width: offset.width)
                     }
                 }
-        )
-    }
+            )
+        }
     func swipeCard(width: CGFloat){
         switch width{
         case -500...(-150):

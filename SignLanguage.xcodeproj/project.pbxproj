@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041BDEA02B7FE53C009EA6A4 /* dog.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 041BDE9F2B7FE53C009EA6A4 /* dog.MOV */; };
+		041BDEA22B7FE542009EA6A4 /* elephant.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 041BDEA12B7FE542009EA6A4 /* elephant.MOV */; };
+		041BDEA42B7FE545009EA6A4 /* giraffe.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 041BDEA32B7FE545009EA6A4 /* giraffe.MOV */; };
+		041BDEA62B7FE54A009EA6A4 /* mouse.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 041BDEA52B7FE54A009EA6A4 /* mouse.MOV */; };
+		041BDEA82B7FE675009EA6A4 /* PracticeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDEA72B7FE675009EA6A4 /* PracticeVideo.swift */; };
+		041BDEAA2B7FE80C009EA6A4 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BDEA92B7FE80C009EA6A4 /* PracticeView.swift */; };
 		042B96FB2B7BBD3600CBCE67 /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B96FA2B7BBD3600CBCE67 /* GetStartedView.swift */; };
 		045A67942B7A903000FFA30B /* SignLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A67932B7A903000FFA30B /* SignLanguageApp.swift */; };
 		045A67962B7A903000FFA30B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A67952B7A903000FFA30B /* CardView.swift */; };
@@ -17,6 +23,14 @@
 		045A67B12B7A903200FFA30B /* SignLanguageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A67B02B7A903200FFA30B /* SignLanguageUITestsLaunchTests.swift */; };
 		045A67C22B7A914000FFA30B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A67C12B7A914000FFA30B /* Card.swift */; };
 		045FCAA72B7D13C4002F8BC9 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FCAA62B7D13C4002F8BC9 /* SelectView.swift */; };
+		045FCAA92B7E9A29002F8BC9 /* PracticeTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FCAA82B7E9A29002F8BC9 /* PracticeTopics.swift */; };
+		04CDFB482B8382EC00631FD1 /* orange.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 04CDFB472B8382EC00631FD1 /* orange.MOV */; };
+		04CDFB4A2B8382FC00631FD1 /* potato.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 04CDFB492B8382FC00631FD1 /* potato.MOV */; };
+		04CDFB4C2B83830C00631FD1 /* nicetomeetyou.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 04CDFB4B2B83830C00631FD1 /* nicetomeetyou.MOV */; };
+		04CDFB4E2B83831900631FD1 /* howareyou.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 04CDFB4D2B83831900631FD1 /* howareyou.MOV */; };
+		04CDFB502B83832300631FD1 /* apple.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 04CDFB4F2B83832300631FD1 /* apple.MOV */; };
+		04CDFB522B83833000631FD1 /* iamsorry.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 04CDFB512B83833000631FD1 /* iamsorry.MOV */; };
+		04CDFB542B83833400631FD1 /* bread.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 04CDFB532B83833400631FD1 /* bread.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041BDE9F2B7FE53C009EA6A4 /* dog.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = dog.MOV; sourceTree = "<group>"; };
+		041BDEA12B7FE542009EA6A4 /* elephant.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = elephant.MOV; sourceTree = "<group>"; };
+		041BDEA32B7FE545009EA6A4 /* giraffe.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = giraffe.MOV; sourceTree = "<group>"; };
+		041BDEA52B7FE54A009EA6A4 /* mouse.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = mouse.MOV; sourceTree = "<group>"; };
+		041BDEA72B7FE675009EA6A4 /* PracticeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PracticeVideo.swift; path = SignLanguage/Model/PracticeVideo.swift; sourceTree = SOURCE_ROOT; };
+		041BDEA92B7FE80C009EA6A4 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		042B96FA2B7BBD3600CBCE67 /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
 		045A67902B7A903000FFA30B /* SignLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045A67932B7A903000FFA30B /* SignLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignLanguageApp.swift; sourceTree = "<group>"; };
@@ -50,6 +70,14 @@
 		045A67B02B7A903200FFA30B /* SignLanguageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignLanguageUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		045A67C12B7A914000FFA30B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		045FCAA62B7D13C4002F8BC9 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		045FCAA82B7E9A29002F8BC9 /* PracticeTopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTopics.swift; sourceTree = "<group>"; };
+		04CDFB472B8382EC00631FD1 /* orange.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = orange.MOV; sourceTree = "<group>"; };
+		04CDFB492B8382FC00631FD1 /* potato.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = potato.MOV; sourceTree = "<group>"; };
+		04CDFB4B2B83830C00631FD1 /* nicetomeetyou.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = nicetomeetyou.MOV; sourceTree = "<group>"; };
+		04CDFB4D2B83831900631FD1 /* howareyou.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = howareyou.MOV; sourceTree = "<group>"; };
+		04CDFB4F2B83832300631FD1 /* apple.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = apple.MOV; sourceTree = "<group>"; };
+		04CDFB512B83833000631FD1 /* iamsorry.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = iamsorry.MOV; sourceTree = "<group>"; };
+		04CDFB532B83833400631FD1 /* bread.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = bread.MOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +105,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0416F8162B8257D4003F52D5 /* animals */ = {
+			isa = PBXGroup;
+			children = (
+				041BDEA32B7FE545009EA6A4 /* giraffe.MOV */,
+				041BDEA52B7FE54A009EA6A4 /* mouse.MOV */,
+				041BDEA12B7FE542009EA6A4 /* elephant.MOV */,
+				041BDE9F2B7FE53C009EA6A4 /* dog.MOV */,
+			);
+			path = animals;
+			sourceTree = "<group>";
+		};
+		041BDE9E2B7FE4B3009EA6A4 /* PracticeVideos */ = {
+			isa = PBXGroup;
+			children = (
+				04CDFB462B8382B700631FD1 /* Common phrases */,
+				04CDFB452B8382AB00631FD1 /* Food */,
+				0416F8162B8257D4003F52D5 /* animals */,
+			);
+			path = PracticeVideos;
+			sourceTree = "<group>";
+		};
 		045A67872B7A902F00FFA30B = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +151,7 @@
 			children = (
 				045A67932B7A903000FFA30B /* SignLanguageApp.swift */,
 				045A67C02B7A912900FFA30B /* View */,
-				045A67BE2B7A911400FFA30B /* ViewModel */,
+				041BDE9E2B7FE4B3009EA6A4 /* PracticeVideos */,
 				045A67BD2B7A910A00FFA30B /* Model */,
 				045A67972B7A903200FFA30B /* Assets.xcassets */,
 				045A67992B7A903200FFA30B /* Preview Content */,
@@ -138,16 +187,10 @@
 		045A67BD2B7A910A00FFA30B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				041BDEA72B7FE675009EA6A4 /* PracticeVideo.swift */,
 				045A67C12B7A914000FFA30B /* Card.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		045A67BE2B7A911400FFA30B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		045A67C02B7A912900FFA30B /* View */ = {
@@ -156,8 +199,31 @@
 				045A67952B7A903000FFA30B /* CardView.swift */,
 				042B96FA2B7BBD3600CBCE67 /* GetStartedView.swift */,
 				045FCAA62B7D13C4002F8BC9 /* SelectView.swift */,
+				045FCAA82B7E9A29002F8BC9 /* PracticeTopics.swift */,
+				041BDEA92B7FE80C009EA6A4 /* PracticeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04CDFB452B8382AB00631FD1 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				04CDFB4F2B83832300631FD1 /* apple.MOV */,
+				04CDFB532B83833400631FD1 /* bread.MOV */,
+				04CDFB492B8382FC00631FD1 /* potato.MOV */,
+				04CDFB472B8382EC00631FD1 /* orange.MOV */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		04CDFB462B8382B700631FD1 /* Common phrases */ = {
+			isa = PBXGroup;
+			children = (
+				04CDFB512B83833000631FD1 /* iamsorry.MOV */,
+				04CDFB4D2B83831900631FD1 /* howareyou.MOV */,
+				04CDFB4B2B83830C00631FD1 /* nicetomeetyou.MOV */,
+			);
+			path = "Common phrases";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +330,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CDFB502B83832300631FD1 /* apple.MOV in Resources */,
+				041BDEA02B7FE53C009EA6A4 /* dog.MOV in Resources */,
+				04CDFB482B8382EC00631FD1 /* orange.MOV in Resources */,
+				04CDFB4C2B83830C00631FD1 /* nicetomeetyou.MOV in Resources */,
+				04CDFB4E2B83831900631FD1 /* howareyou.MOV in Resources */,
+				041BDEA22B7FE542009EA6A4 /* elephant.MOV in Resources */,
+				04CDFB542B83833400631FD1 /* bread.MOV in Resources */,
+				041BDEA62B7FE54A009EA6A4 /* mouse.MOV in Resources */,
 				045A679B2B7A903200FFA30B /* Preview Assets.xcassets in Resources */,
+				04CDFB4A2B8382FC00631FD1 /* potato.MOV in Resources */,
 				045A67982B7A903200FFA30B /* Assets.xcassets in Resources */,
+				04CDFB522B83833000631FD1 /* iamsorry.MOV in Resources */,
+				041BDEA42B7FE545009EA6A4 /* giraffe.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045FCAA92B7E9A29002F8BC9 /* PracticeTopics.swift in Sources */,
 				045FCAA72B7D13C4002F8BC9 /* SelectView.swift in Sources */,
+				041BDEA82B7FE675009EA6A4 /* PracticeVideo.swift in Sources */,
+				041BDEAA2B7FE80C009EA6A4 /* PracticeView.swift in Sources */,
 				045A67962B7A903000FFA30B /* CardView.swift in Sources */,
 				042B96FB2B7BBD3600CBCE67 /* GetStartedView.swift in Sources */,
 				045A67C22B7A914000FFA30B /* Card.swift in Sources */,
@@ -466,6 +546,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -495,6 +576,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
