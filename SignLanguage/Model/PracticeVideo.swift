@@ -17,7 +17,6 @@ struct PracticeVideo: Identifiable, Hashable {
     var animals: [PracticeVideo] {[
         PracticeVideo(video: "elephant", name: "elphant"),
         PracticeVideo(video: "giraffe", name: "giraffe"),
-        PracticeVideo(video: "mouse", name: "mouse"),
         PracticeVideo(video: "dog", name: "dog")
         
     ]}

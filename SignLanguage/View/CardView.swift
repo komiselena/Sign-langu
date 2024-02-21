@@ -4,7 +4,6 @@
 //
 //  Created by Mac on 12.02.2024.
 //
-
 import SwiftUI
 
 struct CardView: View {
@@ -13,10 +12,11 @@ struct CardView: View {
     @State private var color: Color = .black
     
     var body: some View {
+        Text("Tap and swipe")
+            .font(.largeTitle)
+            .foregroundStyle(.tertiary)
+            .offset(y: -300)
         VStack {
-            Text("Tap and swipe")
-                .font(.largeTitle)
-                .foregroundStyle(.tertiary)
             if !card.isFaceUp{
                 ZStack{
                     RoundedRectangle(cornerRadius: 25.0)
@@ -57,16 +57,17 @@ struct CardView: View {
             )
         }
     func swipeCard(width: CGFloat){
-        switch width{
-        case -500...(-150):
-            offset = CGSize(width: -500, height: 0)
+        switch width {
+        case 150...500:
+            offset = CGSize(width: 500, height: 0)
             
         default:
             offset = .zero
         }
     }
-    
 }
+
+
 
 #Preview {
     CardView(card: Card(image: "0", sign: "0", isFaceUp: false))

@@ -25,17 +25,31 @@ struct GetStartedView: View {
                     .scaledToFit()
                     .clipShape(RoundedRectangle(cornerRadius: 25))
                     .frame(width: width, height: height)
-                    
+                
                 Spacer()
-                Button("Get Started", action: {
+                
+                Button(action: {
                     selectView = true
-                    
-                })
-                .buttonStyle(.bordered)
-                .font(.system(size: 35))
+                }) {
+                    Text("Start")
+                        .font(.system(size: 20, weight: .semibold, design: .rounded))
+                        .padding()
+                        .foregroundColor(.black)
+                        .background(
+                            Capsule()
+                                .tint(.white)
+                                .opacity(0.4)
+                                .frame(width: 270, height: 55)
+                        )
+                        .overlay(
+                            Capsule()
+                                .stroke(Color.colorendpoint, lineWidth: 4)
+                                .frame(width: 270, height: 55)
+                        )
+                }
                 
             }
-            .padding(50)
+            .padding(30)
         }
         .fullScreenCover(isPresented: $selectView, content: {
             SelectView(abccards: card.alphabet, numcards: card.numbers)

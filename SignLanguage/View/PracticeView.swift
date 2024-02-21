@@ -14,12 +14,14 @@ struct PracticeView: View {
     @State private var userstext: String = ""
     @State private var roundRec: Bool = false
     @State private var showGreenView: Bool = false
+    
     var body: some View {
+        let video = VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: practvideo.video, withExtension: practvideo.ext)!))
         ZStack {
             RadialGradient(colors: [.colorendpoint, .colorstartpoint], center: .topTrailing, startRadius: 300, endRadius: 700)
                 .ignoresSafeArea()
             VStack{
-                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: practvideo.video, withExtension: practvideo.ext)!))
+                video
                     .frame(width: 350, height: 380)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 
@@ -32,6 +34,7 @@ struct PracticeView: View {
                     .textCase(.lowercase)
                     .onSubmit {
                         if userstext == practvideo.name{
+                            
                         }
                     }
             }
