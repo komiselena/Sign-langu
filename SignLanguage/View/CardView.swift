@@ -14,7 +14,7 @@ struct CardView: View {
     var body: some View {
         Text("Tap and swipe")
             .font(.largeTitle)
-            .foregroundStyle(.tertiary)
+            .foregroundStyle(.accent)
             .offset(y: -300)
         VStack {
             if !card.isFaceUp{
