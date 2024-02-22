@@ -9,21 +9,24 @@ import SwiftUI
 import AVKit
 
 struct PracticeView: View {
-    @State var practvideo: PracticeVideo
+    var practvideo: PracticeVideo
     @State private var player = AVPlayer()
     @State private var userstext: String = ""
     @State private var showCheckmark = false
+    @State private var video: AVPlayer?
+//    var video = VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: practvideo.video, withExtension: practvideo.ext)!))
     
     var body: some View {
-        let video = VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: practvideo.video, withExtension: practvideo.ext)!))
+
         ZStack {
             RadialGradient(colors: [.colorendpoint, .colorstartpoint], center: .topTrailing, startRadius: 300, endRadius: 700)
                 .ignoresSafeArea()
             VStack{
-                video
-                    .frame(width: 350, height: 380)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                
+                if let player = video {
+                    VideoPlayer(player: player)
+                        .frame(width: 350, height: 380)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                }
                 HStack{
                     TextField("Translate it", text: $userstext, onCommit: {
                         if userstext == practvideo.name{
@@ -49,7 +52,7 @@ struct PracticeView: View {
                                 showCheckmark = false
                             }
                         }
-                    }, label: {
+                    }, label:{
                         Text("Input")
                             .font(.system(size: 15, weight: .semibold, design: .rounded))
                             .padding()
@@ -73,11 +76,18 @@ struct PracticeView: View {
                         .foregroundColor(.green)
                         .font(.largeTitle)
                 }
+                
+                
             }
 
-            
         }
+        .onAppear {
+            video = AVPlayer(url: Bundle.main.url(forResource: practvideo.video, withExtension: practvideo.ext)!)
+        }
+
     }
+
+    
 }
 
 #Preview {

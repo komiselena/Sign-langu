@@ -13,9 +13,10 @@ struct PracticeVideo: Identifiable, Hashable {
     
     var video: String
     var name: String
+
     
     var animals: [PracticeVideo] {[
-        PracticeVideo(video: "elephant", name: "elphant"),
+        PracticeVideo(video: "elephant", name: "elephant"),
         PracticeVideo(video: "giraffe", name: "giraffe"),
         PracticeVideo(video: "dog", name: "dog")
         
@@ -30,11 +31,9 @@ struct PracticeVideo: Identifiable, Hashable {
     ]}
     
     var commonPhrases: [PracticeVideo] {[
-        PracticeVideo(video: "iamsorry", name: "iamsorry"),
-        PracticeVideo(video: "howareyou", name: "howsreyou"),
-        PracticeVideo(video: "nicetomeetyou", name: "nicetomeetyou")
+        PracticeVideo(video: "iamsorry", name: "i am sorry"),
+        PracticeVideo(video: "howareyou", name: "how are you"),
+        PracticeVideo(video: "nicetomeetyou", name: "nice to meet you")
     ]}
-    
-    
-    
+
 }

@@ -10,6 +10,7 @@ struct CardView: View {
     @State var card: Card
     @State private var offset = CGSize.zero
     @State private var color: Color = .black
+    @State private var cardsSet: [Card] = []
     
     var body: some View {
         Text("Tap and swipe")
@@ -51,16 +52,17 @@ struct CardView: View {
                     offset = gesture.translation
                 }.onEnded { _ in
                     withAnimation{
-                        swipeCard(width: offset.width)
+                        swipeCard(width: offset.width, card: card)
                     }
                 }
             )
         }
-    func swipeCard(width: CGFloat){
+    func swipeCard(width: CGFloat, card: Card){
         switch width {
         case 150...500:
             offset = CGSize(width: 500, height: 0)
-            
+            cardsSet.append(card)
+            print("card added!")
         default:
             offset = .zero
         }
