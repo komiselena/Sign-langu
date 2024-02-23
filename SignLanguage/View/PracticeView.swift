@@ -13,20 +13,18 @@ struct PracticeView: View {
     @State private var player = AVPlayer()
     @State private var userstext: String = ""
     @State private var showCheckmark = false
-    @State private var video: AVPlayer?
-//    var video = VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: practvideo.video, withExtension: practvideo.ext)!))
     
     var body: some View {
+        var video = VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: practvideo.video, withExtension: practvideo.ext)!))
 
         ZStack {
             RadialGradient(colors: [.colorendpoint, .colorstartpoint], center: .topTrailing, startRadius: 300, endRadius: 700)
                 .ignoresSafeArea()
             VStack{
-                if let player = video {
-                    VideoPlayer(player: player)
-                        .frame(width: 350, height: 380)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                }
+                video
+                    .frame(width: 350, height: 380)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+
                 HStack{
                     TextField("Translate it", text: $userstext, onCommit: {
                         if userstext == practvideo.name{
@@ -79,9 +77,6 @@ struct PracticeView: View {
                 
             }
 
-        }
-        .onAppear {
-            video = AVPlayer(url: Bundle.main.url(forResource: practvideo.video, withExtension: practvideo.ext)!)
         }
 
     }
