@@ -19,6 +19,7 @@ struct GetStartedView: View {
             VStack{
                 Text("Speak with Your Hands!")
                     .font(.system(size: 40, weight: .semibold, design: .rounded))
+                
                 Spacer()
                 Image("ear")
                     .resizable()

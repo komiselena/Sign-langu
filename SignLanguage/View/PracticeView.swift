@@ -77,7 +77,6 @@ struct PracticeView: View {
                         .font(.largeTitle)
                 }
                 
-                
             }
 
         }
